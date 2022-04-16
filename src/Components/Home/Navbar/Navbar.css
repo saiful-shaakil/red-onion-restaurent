@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* style for ful navbar section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  color: #ffff;
+}
+
+/* style for logo */
+.logo {
+  width: 160px;
+}
+
+/* style for login,signup cart link */
+.route-sec a {
+  text-decoration: none;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+}
+.route-sec a:not(:last-child) {
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
