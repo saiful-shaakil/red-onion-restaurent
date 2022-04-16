@@ -1,7 +1,6 @@
 import React from "react";
-import "../../EachFood.css";
 
-const EachBreakfast = ({ eachFood }) => {
+const EachLunch = ({ eachFood }) => {
   const { name, img, price, quote } = eachFood;
   return (
     <div className="each-food">
@@ -22,4 +21,4 @@ const EachBreakfast = ({ eachFood }) => {
   );
 };
 
-export default EachBreakfast;
+export default EachLunch;

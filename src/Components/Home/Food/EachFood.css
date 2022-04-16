@@ -1,3 +1,4 @@
+/* This style sheet is for every food includes breakfast,dinner and lunch. */
 .each-food {
   width: 397px;
   text-align: center;
@@ -8,6 +9,7 @@
   width: 60%;
 }
 
+/* this button is for adding food into cart */
 .cart-button {
   background-color: crimson;
   border: none;
@@ -25,4 +27,8 @@
 }
 .each-food:hover .cart-button {
   display: inline-flex;
+}
+.name {
+  font-weight: 700;
+  font-size: 20px;
 }

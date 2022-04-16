@@ -11,6 +11,7 @@
   color: black;
 }
 
+/* This foods style is for every section includes breakfast,dinner,lunch */
 .foods {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
