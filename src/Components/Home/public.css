@@ -1,13 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 /* style for each section */
 .section-container {
   width: 90%;
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 
 /* style for colorful button includes sign up and search */
 .special-button {
   background-color: crimson;
   padding: 10px 35px;
-  border-radius: 40px;
+  border-radius: 50px;
   color: white;
+  border: none;
+  cursor: pointer;
 }
