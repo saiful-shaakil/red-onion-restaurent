@@ -1,0 +1,12 @@
+.food-navbar {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+.food-navbar a {
+  text-decoration: none;
+  margin: 10px 30px;
+  font-size: 28px;
+  color: black;
+}
