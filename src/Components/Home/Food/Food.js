@@ -5,10 +5,12 @@ import "./Food.css";
 
 const Food = () => {
   return (
-    <div className="section-container food-navbar">
-      <CustomLink to="/breakfast">Breakfast</CustomLink>
-      <CustomLink to="/lunch">Lunch</CustomLink>
-      <CustomLink to="/dinner">Dinner</CustomLink>
+    <div className="section-container">
+      <div className="food-navbar">
+        <CustomLink to="/breakfast">Breakfast</CustomLink>
+        <CustomLink to="/lunch">Lunch</CustomLink>
+        <CustomLink to="/dinner">Dinner</CustomLink>
+      </div>
     </div>
   );
 };
