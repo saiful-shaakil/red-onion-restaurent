@@ -9,7 +9,12 @@ const Banner = () => {
 
       {/* search section */}
       <div className="search-div">
-        <input type="text" name="" id="search" />{" "}
+        <input
+          type="text"
+          name=""
+          placeholder="Search Food Items"
+          id="search"
+        />{" "}
         <input className="special-button" type="button" value="Search" />
       </div>
     </div>
