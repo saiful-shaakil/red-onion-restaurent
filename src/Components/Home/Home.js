@@ -14,7 +14,6 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
       <Banner></Banner>
       <Food></Food>
       <Outlet></Outlet>

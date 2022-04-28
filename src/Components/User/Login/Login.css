@@ -1,0 +1,29 @@
+.line {
+  color: crimson;
+  border-bottom: 1px solid black;
+}
+.or {
+  color: crimson;
+}
+button {
+  border: none;
+}
+.forget-pass {
+  background-color: white;
+}
+.forget-pass:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.login-button {
+  background-color: crimson;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.login-button:hover {
+  background-color: black;
+}

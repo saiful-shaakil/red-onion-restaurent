@@ -1,0 +1,43 @@
+.register-form {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 250px;
+  margin-left: 50px;
+  margin-bottom: 60px;
+}
+
+form input:not(:last-child) {
+  height: 50px;
+  background-color: beige;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 7px;
+}
+form input:focus {
+  outline: none;
+}
+form input:last-child {
+  height: 50px;
+  background-color: crimson;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+}
+form input:last-child:hover {
+  background-color: black;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-form a {
+  text-decoration: none;
+  color: crimson;
+}
