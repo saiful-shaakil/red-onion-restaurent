@@ -1,7 +1,7 @@
 import React from "react";
-import "../../EachFood.css";
+import "./EachFood.css";
 
-const EachBreakfast = ({ eachFood }) => {
+const EachFood = ({ eachFood }) => {
   const { name, img, price, quote } = eachFood;
   return (
     <div className="each-food">
@@ -9,7 +9,7 @@ const EachBreakfast = ({ eachFood }) => {
         <img src={img} alt="" />
       </div>
       <div className="info">
-        <p className="name">{name}</p>
+        <p className="name mt-2">{name}</p>
         <p>{quote}</p>
         <p>
           ${price}{" "}
@@ -22,4 +22,4 @@ const EachBreakfast = ({ eachFood }) => {
   );
 };
 
-export default EachBreakfast;
+export default EachFood;

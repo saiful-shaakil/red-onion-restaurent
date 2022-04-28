@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import EachDinner from "./EachDinner";
+import EachFood from "../EachFood";
 
 const Dinner = () => {
   const [breakfast, setBreakfast] = useState([]);
@@ -12,7 +12,7 @@ const Dinner = () => {
     <div className="section-container">
       <div className="foods">
         {breakfast.map((each) => (
-          <EachDinner key={each.id} eachFood={each}></EachDinner>
+          <EachFood key={each._id} eachFood={each}></EachFood>
         ))}
       </div>
     </div>

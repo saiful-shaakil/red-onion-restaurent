@@ -1,0 +1,19 @@
+.item {
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+.header-image {
+  height: 350px;
+}
+.item a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+.item:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: box-shadow 0.2s ease;
+}

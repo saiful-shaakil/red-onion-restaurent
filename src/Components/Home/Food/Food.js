@@ -5,7 +5,7 @@ import "./Food.css";
 
 const Food = () => {
   return (
-    <div className="section-container">
+    <div className="section-container mb-5">
       <div className="food-navbar">
         <CustomLink to="/breakfast">Breakfast</CustomLink>
         <CustomLink to="/lunch">Lunch</CustomLink>

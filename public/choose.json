@@ -1,0 +1,23 @@
+[
+  {
+    "_id": 1,
+    "name": "Fast Delivery",
+    "icon": "https://i.ibb.co/HKp5V7t/Group-204.png",
+    "description": " We provide exceptional delivery service 24/7 from our Polish centre of excellence, with a targeted service level of 99.8%. ",
+    "img": "https://i.ibb.co/brNZJxj/adult-blur-blurred-background-687824.png"
+  },
+  {
+    "_id": 2,
+    "name": "Master Chef with High Skill",
+    "icon": "https://i.ibb.co/3vYgqh0/Group-1133.png",
+    "description": " We have a very highley skilled cheif who have gained many years experience working with the US food manufacturing sector. ",
+    "img": "https://i.ibb.co/j3p2VpX/chef-cook-food-33614.png"
+  },
+  {
+    "_id": 3,
+    "name": "Home Delivery",
+    "icon": "https://i.ibb.co/T2XSpfM/Group-245.png",
+    "description": "We work with operate to BRC standard and are a minimum of grade A. We supply Global GAP, Halal products as well as other accreditations into the UK market place.",
+    "img": "https://i.ibb.co/FsTf36S/architecture-building-city-2047397.png"
+  }
+]

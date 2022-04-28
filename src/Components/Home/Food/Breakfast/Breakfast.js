@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import EachBreakfast from "./EachBreakfast/EachBreakfast";
 import "../Food.css";
 import "../../public.css";
+import EachFood from "../EachFood";
 
 const Breakfast = () => {
   const [breakfast, setBreakfast] = useState([]);
@@ -14,7 +14,7 @@ const Breakfast = () => {
     <div className="section-container">
       <div className="foods">
         {breakfast.map((each) => (
-          <EachBreakfast key={each.id} eachFood={each}></EachBreakfast>
+          <EachFood key={each._id} eachFood={each}></EachFood>
         ))}
       </div>
     </div>
