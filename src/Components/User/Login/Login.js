@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Logo from "../../../images/logo2.png";
 import { Link } from "react-router-dom";
 import "./Login.css";
@@ -6,6 +6,8 @@ import google from "../../../images/icons/google.png";
 import facebook from "../../../images/icons/facebook.png";
 import twitter from "../../../images/icons/twitter.png";
 const Login = () => {
+  const emailRef = useRef("");
+  const passwordRef = useRef("");
   return (
     <div className="register-form">
       <div className="w-25 mx-auto">
@@ -15,12 +17,14 @@ const Login = () => {
         <form>
           <input
             type="email"
+            ref={emailRef}
             placeholder="Email"
             className="w-100 mt-3"
             required
           />
           <input
             type="text"
+            ref={passwordRef}
             placeholder="Password"
             className="w-100 mt-3"
             required
