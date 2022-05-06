@@ -5,8 +5,15 @@ import "./Navbar.css";
 import "../public.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import Loading from "../../OtherPages/Loading/Loading";
 
 const Navbar = () => {
+  const [user, loading, error] = useAuthState(auth);
+  if (loading) {
+    return <Loading></Loading>;
+  }
   return (
     //   Navbar section
     <div className="section-container navbar">
@@ -20,9 +27,13 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
         </Link>
         <Link to="/login">Login</Link>
-        <Link className="special-button" to="/register">
-          Sign Up
-        </Link>
+        {user ? (
+          <Link to="/profile">{user.displayName}</Link>
+        ) : (
+          <Link className="special-button" to="/register">
+            Sign Up
+          </Link>
+        )}
       </div>
     </div>
   );

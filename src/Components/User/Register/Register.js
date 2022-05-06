@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Register.css";
 import Logo from "../../../images/logo2.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   useCreateUserWithEmailAndPassword,
   useUpdateProfile,
@@ -13,6 +13,8 @@ import { toast } from "react-toastify";
 const Register = () => {
   // to navigate the user
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
   // to create a user by email and password
   const [createUserWithEmailAndPassword, userOfEmail, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
@@ -50,7 +52,7 @@ const Register = () => {
     toast("Try again please...");
   }
   if (userOfEmail) {
-    navigate("/");
+    navigate(from, { replace: true });
   }
   return (
     <div className="register-form">

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Logo from "../../../images/logo2.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Login.css";
 import google from "../../../images/icons/google.png";
 import facebook from "../../../images/icons/facebook.png";
@@ -15,6 +15,8 @@ import { toast } from "react-toastify";
 const Login = () => {
   //to navigate the user
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
   //to sign in by user email and password
   const [
     signInWithEmailAndPassword,
@@ -44,7 +46,7 @@ const Login = () => {
     toast("Try again please...");
   }
   if (userOfEmail || userOfGoogle) {
-    navigate("/");
+    navigate(from, { replace: true });
   }
   return (
     <div className="register-form">
